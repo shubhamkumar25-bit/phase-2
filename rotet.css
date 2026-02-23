@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    animation: rotateBox 2s linear infinite;
+}
+
+@keyframes rotateBox {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

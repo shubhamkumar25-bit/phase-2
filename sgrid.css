@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.containar {
+    position: relative;
+    width: 481px;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2px;
+    margin: 50px;
+    padding: 5px;
+    border: 10px solid rgb(123, 201, 116);
+    border-radius: 10px;
+    
+}
+
+
+.box {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(81, 34, 17);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(226, 215, 194);
+    
+    
+  
+}
+
+#inner {
+    position: absolute; 
+    background-color: rgb(243, 42, 7);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    grid-row: 1;    
+    grid-column: 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(249, 241, 2);
+    
+}

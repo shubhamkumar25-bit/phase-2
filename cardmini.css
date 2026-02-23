@@ -1,0 +1,92 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* body center */
+body{
+    background:#f2f2f2;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* container */
+.container{
+    width:90%;
+    max-width:400px;
+}
+
+/* card */
+.card{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    transition:0.3s;
+}
+
+/* hover effect */
+.card:hover{
+    transform:scale(1.03);
+}
+
+/* image */
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* title */
+.card h2{
+    margin:10px 0;
+}
+
+/* description */
+.desc{
+    font-size:14px;
+    color:gray;
+    margin-bottom:10px;
+}
+
+/* price */
+.price{
+    color:green;
+    margin-bottom:10px;
+}
+
+/* button */
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* button hover */
+button:hover{
+    background:darkblue;
+}
+
+/* 📱 Responsive (mobile) */
+@media(max-width:500px){
+    .card{
+        padding:10px;
+    }
+
+    .card h2{
+        font-size:18px;
+    }
+
+    button{
+        width:100%;
+    }
+}

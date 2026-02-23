@@ -1,0 +1,255 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --text-color: #333;
+    --light-text: #666;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+/* ===== PROFILE CONTAINER ===== */
+.profile-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== PROFILE IMAGE STYLING ===== */
+.profile-image {
+    /* Display as block for centering */
+    display: block;
+    /* Center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    /* Image dimensions */
+    width: 500px;
+    height: 500px;
+    /* Circular shape */
+    border-radius: 50%;
+    /* Border styling */
+    border: 5px solid var(--secondary-color);
+    /* Image aspect ratio control */
+    object-fit: cover;
+    /* Smooth transition effect */
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* ===== PROFILE INFO SECTION ===== */
+.profile-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: var(--light-text);
+}
+
+/* ===== PROFILE SECTIONS ===== */
+.profile-section {
+    margin-bottom: 2rem;
+}
+
+.profile-section h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.profile-section p {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* ===== SKILLS LIST ===== */
+.skills-list {
+    /* Remove default list styling */
+    list-style-type: none;
+    /* Remove default padding */
+    padding-left: 0;
+    /* Display in grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skills-list li {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    border-left: 4px solid var(--secondary-color);
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===== COURSES LIST ===== */
+.courses-list {
+    /* Remove default list styling */
+    list-style-type: none;
+    /* Remove default padding */
+    padding-left: 0;
+}
+
+.courses-list li {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.courses-list h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.courses-list p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin: 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .profile-container {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+
+    .profile-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile-info p {
+        font-size: 0.9rem;
+    }
+
+    .profile-section h2 {
+        font-size: 1.1rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-list li {
+        padding: 1rem;
+    }
+
+    .courses-list h3 {
+        font-size: 1rem;
+    }
+}
